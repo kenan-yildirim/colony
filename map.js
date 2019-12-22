@@ -1280,13 +1280,96 @@ var VectorCanvas = function (width, height, params) {
   };
 
   function info(state){
-    if (state == 'va') {
-       document.getElementById('info').innerHTML = "<ul><li><a href='https://www.operationsmile.org/'>Operations Smiles</a></li><li><a href='https://www.samaritanhouseva.org'>Samaritan House</a></li><li><a href='https://www.wish.org'>Make A Wish Foundation</a></li><li><a href='https://www.ob.org'>Operation Blessing</a></li><li><a href='https://www.alz.org'>Alzheimer's Association</a></li><li><a href='https://www.diabetes.org'>American Diabetes Association</a></li><li><a href='https://www.volunteerhr.org'>VOLUNTEER Hampton Roads</a></li><li><a href='https://www.hrcv.uso.org'>USO JEB Little Creek</a></li><li><a href='https://www.rotaryclubofnorfolk.org'>Rotary Club of Norfolk</a></li><li><a href='https://www.shrhabitat.org'>Habitat for Humanity of South Hampton Roads</a></li></ul>";
-     } else {
-       document.getElementById('info').innerHTML = "This state is not ready yet!";
+    switch (state){
+      case 'va':
+          document.getElementById('info').innerHTML = "<h1>30 Mohican burada yasiyor.</h1>";
+          break;
 
-     }
-  }
+      case 'az':
+          document.getElementById('info').innerHTML = "<h1>1 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'ca':
+          document.getElementById('info').innerHTML = "<h1>9 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'co':
+          document.getElementById('info').innerHTML = "<h1>1 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'ct':
+          document.getElementById('info').innerHTML = "<h1>2 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'dc':
+          document.getElementById('info').innerHTML = "<h1>2 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'de':
+          document.getElementById('info').innerHTML = "<h1>1 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'fl':
+          document.getElementById('info').innerHTML = "<h1>3 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'il':
+          document.getElementById('info').innerHTML = "<h1>3 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'in':
+          document.getElementById('info').innerHTML = "<h1>2 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'ks':
+          document.getElementById('info').innerHTML = "<h1>2 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'la':
+          document.getElementById('info').innerHTML = "<h1>3 Mohican burada yasiyor.</h1>";
+          break;
+      
+      case 'mo':
+          document.getElementById('info').innerHTML = "<h1>1 Mohican burada yasiyor.</h1>";
+          break;     
+
+      case 'ms':
+          document.getElementById('info').innerHTML = "<h1>2 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'nc':
+          document.getElementById('info').innerHTML = "<h1>1 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'nj':
+          document.getElementById('info').innerHTML = "<h1>7 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'ny':
+          document.getElementById('info').innerHTML = "<h1>3 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'oh':
+          document.getElementById('info').innerHTML = "<h1>1 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'tx':
+          document.getElementById('info').innerHTML = "<h1>20 Mohican burada yasiyor.</h1>";
+          break;
+
+      case 'in':
+          document.getElementById('info').innerHTML = "<h1>2 Mohican burada yasiyor.</h1>";
+          break;
+      
+      case 'wa':
+          document.getElementById('info').innerHTML = "<h1>1 Mohican burada yasiyor.</h1>";
+          break;
+      
+      default:
+          document.getElementById('info').innerHTML = "<h1>Mohican colony bilgisi bulunamamistir!</h1>";
+          break;
+      }
+    }
 
  /* function hover(state, notification){
     if (state == 'va') {
